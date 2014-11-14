@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xmlns="http://java.sun.com/xml/ns/javaee"
+xmlns:web="http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
+xsi:schemaLocation="http://java.sun.com/xml/ns/javaee
+http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" version="2.5">
+	<servlet>
+		<servlet-name>Project</servlet-name>
+		<servlet-class>edu.uwm.cs361.ProjectServlet</servlet-class>
+	</servlet>
+	
+	<servlet>
+		<servlet-name>ProjectServlet</servlet-name>
+		<servlet-class>edu.uwm.cs361.ProjectServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ProjectServlet</servlet-name>
+		<url-pattern>/project</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>MyContactServlet</servlet-name>
+		<servlet-class>edu.uwm.cs361.MyContactServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>MyContactServlet</servlet-name>
+		<url-pattern>/myContact</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>CreateStaffServlet</servlet-name>
+		<servlet-class>edu.uwm.cs361.CreateStaffServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>CreateStaffServlet</servlet-name>
+		<url-pattern>/createStaff</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>ViewStaffServlet</servlet-name>
+		<servlet-class>edu.uwm.cs361.ViewStaffServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ViewStaffServlet</servlet-name>
+		<url-pattern>/viewStaff</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>EditStaffServlet</servlet-name>
+		<servlet-class>edu.uwm.cs361.EditStaffServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>EditStaffServlet</servlet-name>
+		<url-pattern>/editStaff</url-pattern>
+	</servlet-mapping>
+	
+	
+	<servlet>
+		<servlet-name>EditStaffContactServlet</servlet-name>
+		<servlet-class>edu.uwm.cs361.EditStaffContactServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>EditStaffContactServlet</servlet-name>
+		<url-pattern>/editStaffContact</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>CourseListServlet</servlet-name>
+		<servlet-class>edu.uwm.cs361.CourseListServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>CourseListServlet</servlet-name>
+		<url-pattern>/courseList</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>ScrapeServlet</servlet-name>
+		<servlet-class>edu.uwm.cs361.ScrapeServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ScrapeServlet</servlet-name>
+		<url-pattern>/scrape</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>CreateCourseServlet</servlet-name>
+		<servlet-class>edu.uwm.cs361.CreateCourseServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>CreateCourseServlet</servlet-name>
+		<url-pattern>/createCourse</url-pattern>
+	</servlet-mapping>
+	
+		
+	<servlet>
+		<servlet-name>EditSectionServlet</servlet-name>
+		<servlet-class>edu.uwm.cs361.EditSectionServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>EditSectionServlet</servlet-name>
+		<url-pattern>/editSection</url-pattern>
+	</servlet-mapping>
+
+	<welcome-file-list>
+		<welcome-file>index.html</welcome-file>
+	</welcome-file-list>
+</web-app>

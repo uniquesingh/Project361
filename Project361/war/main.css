@@ -1,0 +1,777 @@
+.mainlogo-img
+{
+	display: block;
+	position: relative;
+	width:1420px;
+	height:120px;
+	margin-left:-198px;	
+	background: -webkit-linear-gradient(bottom, rgb(168, 167, 167) 11%,white 100%); 
+}
+
+.courselayout {
+	height: 8000px;
+	position:absolute;
+	width:1420px;
+}
+
+.courselist
+{
+	font: 0.8em/17px Verdana, Arial, Helvetica, sans-serif;
+}
+.banner
+{
+	margin-left: 198px;
+}
+
+.errors
+{
+	color: #ff0700;
+	font: 1em/20px Verdana, Arial, Helvetica, sans-serif;
+	margin-left: -37px;
+}
+
+.home-page
+{
+	width:950px;
+	position:absolute;
+}
+
+.buttons
+{
+	margin-top:50px;
+	margin-left:35px;
+	width:210px; 
+	position:absolute;
+}
+
+.menu
+{
+	position:absolute;
+	height:1600px;
+	width:300px;
+	margin-top: 5px;
+}
+
+.background-style
+{
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+	background: -webkit-linear-gradient(bottom, rgb(255, 246, 0) -550%,black 100%);
+	background: -moz-linear-gradient(bottom, rgb(255, 246, 0) -550%,black 100%);
+}
+.layout
+{	
+	position:absolute;
+	height:1600px;
+	width:1420px;
+}
+
+#month
+{
+	color:#fff;
+}
+
+.office_hours
+{
+	color:#fff;
+	width: 700px;
+}
+
+a:-webkit-any-link
+{
+ 	text-decoration: none;
+ 	color: #fff;
+ 	background-color:transparent;
+}
+
+a:-moz-any-link
+{
+ 	text-decoration: none;
+ 	color: #fff;
+ 	background-color:transparent;
+}
+
+.buttons-outline
+{
+	box-shadow: 0px 0px 49px rgba(255, 235, 0, 0.3);	
+	border: 1px solid #965A00;
+	
+}
+
+.buttons ul ul
+{
+	visibility:hidden;
+  	opacity:0;
+  	transition:visibility 0s ease-out .1s,opacity 1s ease-out;
+}
+
+.buttons ul li:hover  ul
+{
+	visibility:visible;
+  	opacity:1;
+  	transition-delay:0s;
+}	
+
+.buttons ul:hover 
+{
+	width: 220px;
+ 	height: 35px;
+ 	background: #3e5a6b;
+	background: -webkit-linear-gradient(top, #3e5a6b 40%,white 150%); 
+	background: -moz-linear-gradient(top, #3e5a6b 40%,white 150%); 
+}	
+.buttons ul ul:hover 
+{		
+	width: 210px;
+ 	height: 30px;
+ 	background: #3e5a6b;
+	background: -webkit-linear-gradient(top, #3e5a6b 40%,white 150%); 
+	background: -moz-linear-gradient(top, #3e5a6b 40%,white 150%); 
+}	
+
+.buttons ul
+{
+	width: 215px;
+ 	height: 30px;
+ 	text-align: -webkit-center;
+ 	text-align: -moz-center;
+	background: -webkit-linear-gradient(top, black 65%,rgb(168, 167, 167) 170%); 
+	background: -moz-linear-gradient(top, black 65%,rgb(168, 167, 167) 170%); 
+	padding: 18px 0 0 0;
+ 	font: 1.2em/12px Verdana, Arial, Helvetica, sans-serif; 
+	list-style: none;
+	position: relative;
+	display: block;
+	color: #fff;
+ 	text-decoration: none;
+ 	border-radius: 15px;
+ 	margin-bottom:18px;
+ 	margin-top:-18px;
+ 	transition: opacity .5s liner;
+}
+
+.buttons ul ul
+{
+	width: 200px;
+ 	height: 20px;
+ 	text-align: -webkit-center;
+ 	text-align: -moz-center;
+	background: -webkit-linear-gradient(top, black 65%,rgb(168, 167, 167) 170%); 
+	background: -moz-linear-gradient(top, black 65%,rgb(168, 167, 167) 170%); 
+	padding: 10px 0 0 0;
+ 	font: 0.8em/12px Verdana, Arial, Helvetica, sans-serif; 
+	list-style: none;
+	position: relative;
+	color: #fff;
+ 	text-decoration: none;
+ 	border-radius: 10px;
+ 	margin-bottom:18px;
+ 	margin-top:-18px; 	
+	margin-left:220px;
+}
+
+.buttons ul:after
+{
+	content: ""; 
+	clear: both; 
+	display: block;
+	margin-left:40px;
+}
+
+.page-after-banner
+{
+	margin-top:20px;
+	font: 1.0em/12px Verdana, Arial, Helvetica, sans-serif;
+	color:#fff;
+}
+
+.form
+{
+	margin-top:20px;
+	font: 1.3em/20px Verdana, Arial, Helvetica, sans-serif;
+	color:#fff;
+}
+
+#title-create-staff
+{
+	margin-top:-130px;
+	margin-left:-90px;
+	color:#fff;
+	font: 2.5em/100px Verdana, Arial, Helvetica, sans-serif;
+	height:100px;
+}
+
+#title-home-staff
+{
+	margin-top:-130px;
+	margin-left:-90px;
+	color:#fff;
+	font: 2.0em/100px Verdana, Arial, Helvetica, sans-serif;
+	height:100px;
+}
+
+#title-home
+{
+	margin-top:15px;
+	margin-left:60px;
+	color:#fff;
+	font: 3.0em/100px Verdana, Arial, Helvetica, sans-serif;
+	height:100px;
+}
+
+#sub
+{
+	color:#E4CE2A;
+	font: 1.0em/20px Verdana, Arial, Helvetica, sans-serif;
+}
+
+form
+{
+	margin:auto;
+	position:relative;
+	width:750px;
+	height:450px;
+	line-height: 24px;
+	font-weight: bold;
+	color: black;
+	text-decoration: none;
+	border-radius: 10px;
+	padding:130px;
+}
+
+#ccf
+{
+	top:15px;
+	box-shadow: 0px 0px 31px rgba(248, 218, 0, 0.3);
+	border: 1px solid #965A00;
+	margin:auto;
+	position:relative;
+	width:830px;
+	height:450px;
+	line-height: 24px;
+	font-weight: bold;
+	color: black;
+	text-decoration: none;
+	border-radius: 10px;
+	padding:130px;
+	margin-left: 290px;
+}
+
+#ccflist
+{
+	top:15px;
+	box-shadow: 0px 0px 31px rgba(248, 218, 0, 0.3);
+	border: 1px solid #965A00;
+	margin:auto;
+	position:relative;
+	width:830px;
+	height:7300px;
+	line-height: 24px;
+	font-weight: bold;
+	color: black;
+	text-decoration: none;
+	border-radius: 10px;
+	padding:130px;
+	margin-left: 290px;
+}
+
+tr.border_bottom td {
+ 	font: 0.8em/17px Verdana, Arial, Helvetica, sans-serif;
+	position:relative;
+	line-height: 10px;
+	border: 1px solid rgba(242, 170, 13, 0.40);
+}
+
+#ccf-staff-home
+{
+	margin-top:36px;
+	box-shadow: 0px 0px 31px rgba(248, 218, 0, 0.3);
+	border: 1px solid #965A00;
+	height: 1200px;
+	margin-left: 290px;
+	width:830px;
+}
+
+.course
+{
+	margin-left:-100px;
+	color:white;
+}
+input
+{
+	width:375px;
+	display:block;
+	height: 35px;
+	box-shadow: 0px 0px 31px rgba(248, 218, 0, 0.3);
+	border: 1px solid #965A00;
+	font-size: 14px;
+	border-radius:8px;
+}
+
+.createStaffInput
+{	
+	margin-left: 200px;
+	margin-top: -25px;
+}
+.staff-select
+{
+	width:375px;
+	display:block;
+	height: 35px;
+	box-shadow: 0px 0px 31px rgba(248, 218, 0, 0.3);
+	border: 1px solid #965A00;
+	font-size: 14px;
+	border-radius:8px;
+}
+.staff-select-edit-course
+{
+	width:200px;
+	display:block;
+	height: 35px;
+	box-shadow: 0px 0px 31px rgba(248, 218, 0, 0.3);
+	border: 1px solid #965A00;
+	font-size: 14px;
+	border-radius:8px;
+}
+
+.cf
+{
+	width:100px;
+	display:block;
+	height: 35px;	
+	box-shadow: 0px 0px 31px rgba(248, 218, 0, 0.3);
+	border: 1px solid #965A00;
+	font-size: 14px;
+}
+
+.submit
+{
+	margin-left:487px;
+	margin-top:60px;
+	width:270px;
+	display:block;
+	height: 45px;
+	box-shadow: 0px 0px 31px rgba(248, 218, 0, 0.3);
+	border: 1px solid #965A00;
+	color:#3B2CA7;
+	background:white;
+	font: 1.5em/40px Verdana, Arial, Helvetica, sans-serif;
+	border-radius:15px;
+}
+
+.view-staff
+{
+	top:5px;
+	font: 1.0em/30px Verdana, Arial, Helvetica, sans-serif;
+	color:#FFC478;;
+	position:relative;
+}
+
+.view-staff-result
+{
+	top:5px;
+	font: 1.0em/30px Verdana, Arial, Helvetica, sans-serif;
+	color:#FFC478;;
+	position:relative;
+	left:-200px;
+}
+.view-course
+{
+	top:5px;
+	font: 1.0em/30px Verdana, Arial, Helvetica, sans-serif;
+	color:#FFC478;;
+	position:relative;
+}
+
+.view-submit-staff
+{
+	margin-left: 100px;
+	margin-top: -40px;
+	width: 200px;
+	display: block;
+	height: 35px;
+	box-shadow: 0px 0px 31px rgba(248, 218, 0, 0.3);
+	border: 1px solid #965A00;
+	color: #704800;
+	background: white;
+	font: 1.0em/20px Verdana, Arial, Helvetica, sans-serif;
+	border-radius: 15px;
+}
+
+.edit-staff
+{
+	top:235px;
+	font: 1.0em/30px Verdana, Arial, Helvetica, sans-serif;
+	color:#FFC478;;
+	position:absolute;
+}
+
+.edit-submit-staff
+{
+	margin-left: 560px;
+	margin-top: 400px;
+	width: 200px;
+	display: block;
+	height: 35px;
+	box-shadow: 0px 0px 31px rgba(248, 218, 0, 0.3);
+	border: 1px solid #965A00;
+	color: #704800;
+	background: white;
+	font: 1.0em/20px Verdana, Arial, Helvetica, sans-serif;
+	border-radius: 15px;
+}
+
+.course-select
+{
+	width:115px;
+	display:block;
+	height: 35px;
+	box-shadow: 0px 0px 31px rgba(248, 218, 0, 0.3);
+	border: 1px solid #965A00;
+	font-size: 14px;
+	border-radius:8px;
+	margin-bottom:40px;
+}
+
+.box-outline
+{
+	box-shadow: 0px 0px 8px rgba(0, 79, 248, 0.3);
+	border: 1px solid #965A00;
+}
+
+/*Kevin CSS Code */
+.changeOfficeLocation{
+    width: 120px;
+    height: 20px;
+}
+
+.button
+{
+	width:200px;
+	display:inline;
+}
+
+.contactTableMain
+{
+	color:#fff;
+}
+
+.contactTable
+{
+	color:#fff;
+    padding: 5px;
+    text-align: center;
+}
+
+.contactEditLink {
+     text-align:center;
+}
+
+.adminQueryHeading{
+    width: 160px; 
+    text-align: right;
+}
+
+.submitQuery{
+    width:50px;
+}
+
+#ta_table
+{
+	color:#fff;
+}
+
+/* Hector */
+
+tbody tr .ad_home_course_listing {
+	min-width: 159px;
+	text-align: center;
+	padding-top: 2px;
+}
+
+
+#admin_home_courselist tbody tr:hover a{
+	background-color:#FBFF75;
+	color:#000000;
+}
+#admin_home_courselist tbody tr:hover {
+	background-color:#FBFF75;
+	color:#000000;
+}
+
+.course_changes_button 
+{
+	width:125px;
+}
+.course_delete_button
+{
+	width:125px;
+}
+#schedule_copy_button
+{
+	width:175px;
+}
+.days {
+
+}
+.page-after-banner table {
+	color:#FFFFFF;	
+}
+
+.page-after-banner #month {
+	width: 90%;
+	height: auto;
+	display: block;
+}
+/*.page-after-banner #month, th, td {
+	border: 1px dotted #FDFC00;
+	border-collapse: collapse;
+}*/
+
+.page-after-banner #month, .office_hours {
+	margin-left: 18px;
+	margin-top: 10px;
+}
+
+.events tr {
+	height:45px;	
+}
+
+.side_time  {
+	color: #FFFB9E;
+	text-align: right;
+}
+.events .times  {
+	color: #FFFB9E;
+	text-align: right;
+}
+.events .event_details {
+	text-align: center;
+	
+}
+.events .event_details:hover {
+	background-color: #FFFB9E;
+	cursor: default;
+	color: black;
+}
+
+.events .event_details:hover .office-nh{
+	display:none;
+}
+.events .event_details .office-hov {
+	display: none;
+}
+.events .event_details:hover .office-hov{
+	display:inline;
+}
+
+tbody tr .office_hours_header {
+	text-align: left;
+	font-style: normal;
+	font-weight: bold;
+	font-style:italic;
+	min-width:300px;
+}
+
+tbody tr .office_hours_row {
+	vertical-align:top;	
+}
+
+#layout .page-after-banner .button {
+	background-color: #303030;
+	color: #FFFFFF;
+	font-size: large;
+	border-right-style: ridge;
+	border-bottom-style: ridge;
+	border-bottom-width: thin;
+	border-right-width: thin;
+	text-shadow: 1px 2px #000000;
+	width: 200px;
+	display: inline;
+	margin: 5px;
+}
+
+#layout .page-after-banner .button:hover {
+	background-color: #FFFFFF;
+	color: #303030;
+	text-shadow: 0px 0px #FFFFFF;
+}
+
+#layout .page-after-banner .ta_table {
+	width: 500px;
+	overflow:auto;
+	margin-left:10px;
+}
+
+.ta_table td{
+	text-align: center;
+	min-width: 250px;
+	cursor: default;
+	padding-top: 9px;
+	padding-bottom: 7px;
+	min-height:40px;
+}
+.ta_table td:hover .edit_course_nh {
+	display:none;
+}
+.ta_table td:hover .edit_course_hov {
+	display:inline;
+}
+.ta_table td .edit_course_hov {
+	display:none;
+}
+.ta_table .TA:hover {
+	background-color: #FFFB9E;
+	color:#000000;
+}
+
+.ta_table .TA:hover a{
+	color:#000000;
+}
+
+#ta_edit_click:target, #ta_edit_click_2:target {
+	display: block;
+	overflow:auto;
+}
+#ta_edit_click, #ta_edit_click_2 {
+	display:none;
+	height:35px;	
+}
+
+ul li #replacement:hover{
+	background-color:#FFFA87;
+	color:#000000;
+}
+
+#replace_message {
+	font-size: x-large;		
+}
+#ta_submit_form {
+	width: 50px;
+	height: 50px;
+}
+#ta_edit_submit_form {
+	width: 50px;
+	height: 50px;
+}
+.ta_table_admin {
+	margin-left:-85px;	
+}
+.ta_table_admin td{
+	text-align: center;
+	min-width: 120px;
+	cursor: default;
+	padding-top: 9px;
+	padding-bottom: 7px;
+	min-height:40px;
+}
+.ta_table_admin td:hover .edit_course_nh {
+	display:none;
+}
+.ta_table_admin td:hover .edit_course_hov {
+	display:inline;
+}
+.ta_table_admin td .edit_course_hov {
+	display:none;
+}
+.ta_table_admin .editable:hover {
+	background-color: #FFFB9E;
+	color:#000000;
+}
+
+.ta_table_admin .editable:hover a{
+	color:#000000;
+}
+.page-after-banner h3 .ad_home_course_listing {
+	margin-left: 22px;
+}
+
+
+/* Jacob */
+.grad_jac{
+    background: -webkit-linear-gradient(right, white,gray); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(right, white,gray); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(right, white,gray); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(right, white,gray); /* Standard syntax */
+}
+#banner{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.border_jac{
+    border-width: medium;
+    border-style: solid;
+}
+.abscenter_jac{
+    position: absolute;
+}
+.floatingcenter{
+    position: relative;
+    margin: 0 auto;
+}
+.container_jac{
+    width: 800px;
+    height: 430px;
+}
+
+#loginbox{
+    width: 450px;
+    left: 175px;
+    top: 50px;
+    text-align: center;
+}
+#helpbox{
+    top:320px;
+    left:300px;
+    width: 200px;
+    text-align: center;
+}
+
+#promptbox{
+    width: 400px;
+    height: 100px;
+    left: 200px;
+    top: 50px;
+    text-align: center;
+}
+#infobox{
+    width: 500px;
+    left: 150px;
+    top: 150px;
+    text-align: center;
+}
+
+
+.light-on-dark{
+    background-color: #1f1f1f;
+    color: #eeeeee;
+}
+form p label {
+    display:block;
+    float:left;
+    width:200px;
+}
+
+.cleanput{
+    display:inline;
+    height: auto;
+    width: auto;
+    box-shadow: none;
+    border: 0;
+    font-size: medium;
+    border-radius:0px;
+}
+.cleanform
+{
+	margin:auto;
+	position:static;
+	width:auto;
+	height:auto;
+	line-height: normal;
+	font-weight: normal;
+	color: inherit;
+	text-decoration: none;
+	border-radius: 0;
+	padding:0;
+}

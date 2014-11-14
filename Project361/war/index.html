@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Login</title>
+    <link href="main.css" rel="stylesheet" type="text/css"/>
+    <meta charset="UTF-8">
+  </head>
+  
+  <body class="grad_jac">
+    <img src="Images/UWM_D2L_banner_960w.png" alt="UWM Banner" id="banner"> 
+
+    <section class="container_jac floatingcenter">
+      <div class="login border_jac abscenter_jac light-on-dark" id="loginbox">
+        <h1>University Scheduling System Login</h1>
+        <!-- <form method="post" action="index.html"> -->
+        <form class="cleanform" method="GET" action="/project">
+          <p><label>Email</label><input class="cleanput" type="email" name="login" value="" placeholder="Email"></p>
+          <p><label>Password</label><input class="cleanput" type="password" name="password" value="" placeholder="Password"></p>
+          <!-- <p class="remember_me"> -->
+          <!--   <label> -->
+          <!--     <input type="checkbox" name="remember_me" id="remember_me"> -->
+          <!--     Remember me on this computer -->
+          <!--   </label> -->
+          <!-- </p> -->
+          <p><input class="cleanput" type="submit" name="commit" value="Login"></p>
+        </form>
+      </div>
+
+      <div class="login-help border_jac abscenter_jac light-on-dark" id="helpbox">
+        <p>Forgot your password?<br> <a href="index.html">Click here to reset it</a>.</p>
+      </div>
+    </section>
+
+  </body>
+</html>
