@@ -108,7 +108,7 @@ public class EditStaffContactServlet extends HttpServlet{
 			errors.add("Home address is required.");
 		if (homePhone.length() != 10)
 			errors.add("Enter 10 digit phone number for home phone");
-
+		
 		
 		if (errors.size() > 0) {
 			page.banner(req,resp);
