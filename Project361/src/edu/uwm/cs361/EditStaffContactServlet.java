@@ -69,6 +69,21 @@ public class EditStaffContactServlet extends HttpServlet{
 		}
 	}
 	
+	private String formatPhone(String number)
+	{
+		String toReturn = "";
+		if(number != null)
+		{
+			for(int i = 0; i < number.length(); ++i)
+			{
+				char current = number.charAt(i);
+				if( Character.isDigit(current)  ) 
+						toReturn += current;
+			}
+		}
+		return toReturn;
+	}
+	
 	@Override
 	public void doPost(HttpServletRequest req, HttpServletResponse resp)
 			throws IOException {
@@ -82,14 +97,17 @@ public class EditStaffContactServlet extends HttpServlet{
 		
 		List<String> errors = new ArrayList<String>();
 		
-		if (officePhone == null)
-			officePhone = "";
-		if (office == null)
-			office = "";
-		if (homeAddress == null)
-			homeAddress = "";
-		if (homePhone == null)
-			homePhone = "";
+		officePhone = formatPhone(officePhone);
+		homePhone = formatPhone(homePhone);
+		
+		if (officePhone.length() != 10)
+			errors.add("Enter 10 digit phone number for office phone");
+		if (office == null || office.length() < 6)
+			errors.add("Office location or \"none\" is required.");
+		if (homeAddress == null || homeAddress.isEmpty())
+			errors.add("Home address is required.");
+		if (homePhone.length() != 10)
+			errors.add("Enter 10 digit phone number for home phone");
 
 		
 		if (errors.size() > 0) {
