@@ -85,7 +85,6 @@ public class EditStaffServlet extends HttpServlet{
 		String password = req.getParameter("password");
 		String firstname = req.getParameter("firstname");
 		String lastname = req.getParameter("lastname");
-		String telephone = req.getParameter("telephone");
 		String stafftype = req.getParameter("stafftype");
 
 		List<String> errors = new ArrayList<String>();
@@ -116,7 +115,7 @@ public class EditStaffServlet extends HttpServlet{
 			try {
 				//update the information for the user
 				String[] myS = {""};
-				data.updateStaff(username, firstname + " " +lastname, password, telephone, myS, stafftype);
+				data.updateStaff(username, firstname + " " +lastname, password, myS, stafftype);
 			} catch (EntityNotFoundException ex) {
 				// TODO Auto-generated catch block
 				ex.printStackTrace();
@@ -160,26 +159,26 @@ public class EditStaffServlet extends HttpServlet{
 		+			"<div id=\"title-create-staff\">"
 		+				"Edit Staff"
 		+			"</div>"
-		+			"<div id=\"sub\">";
-//		+				"<table>"
-//		+					"<tr>"
-//		+						"<td class='form'>"
-//		+							"Staff:"
-//		+							"<select id='staff' name='staff' class='staff-select'>"
-//		+									"<option value = '' selected> Select a Person </option>";
-//										http += "<option disabled>Instructor's</option>";		
-//										for(Entity user:users){
-//											if(!user.getProperty(data.TYPE).equals("TA"))
-//													http += "<option>" + data.getOurKey(user.getKey()) + "</option>";
-//										}
-//										http += "<option disabled>TA's</option>";
-//										for(Entity user:users){
-//											if(user.getProperty(data.TYPE).equals("TA"))
-//												http += "<option>" + data.getOurKey(user.getKey()) + "</option>";
-//										}
-//		http +=						"</select><br><br>"
-//		+						"</td>"
-//		+					"</tr>";
+		+			"<div id=\"sub\">"
+		+				"<table>"
+		+					"<tr>"
+		+						"<td class='form'>"
+		+							"Staff:"
+		+							"<select id='staff' name='staff' class='staff-select'>"
+		+									"<option value = '' selected> Select a Person </option>";
+										http += "<option disabled>Instructor's</option>";		
+										for(Entity user:users){
+											if(!user.getProperty(data.TYPE).equals("TA"))
+													http += "<option>" + data.getOurKey(user.getKey()) + "</option>";
+										}
+										http += "<option disabled>TA's</option>";
+										for(Entity user:users){
+											if(user.getProperty(data.TYPE).equals("TA"))
+												http += "<option>" + data.getOurKey(user.getKey()) + "</option>";
+										}
+		http +=						"</select><br><br>"
+		+						"</td>"
+		+					"</tr>";
 		
 		for(Entity user:users){
 			if(data.getOurKey(user.getKey()).equals(staff)){

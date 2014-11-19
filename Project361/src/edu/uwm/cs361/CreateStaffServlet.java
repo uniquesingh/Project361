@@ -50,7 +50,6 @@ public class CreateStaffServlet extends HttpServlet{
 		String password = req.getParameter("password");
 		String firstname = req.getParameter("firstname");
 		String lastname = req.getParameter("lastname");
-		String telephone = req.getParameter("telephone");
 		String stafftype = req.getParameter("stafftype");
 
 		List<String> errors = new ArrayList<String>();
@@ -97,7 +96,7 @@ public class CreateStaffServlet extends HttpServlet{
 			try {
 				//create new staff with all the parameter
 				String[] myS = {""};
-				data.createStaff(username, firstname + " " +lastname, password, telephone, myS, stafftype);
+				data.createStaff(username, firstname + " " +lastname, password, myS, stafftype);
 			} catch (EntityNotFoundException ex) {
 				// TODO Auto-generated catch block
 				ex.printStackTrace();
@@ -142,7 +141,6 @@ public class CreateStaffServlet extends HttpServlet{
 		String password = req.getParameter("password") != null ? req.getParameter("password") : "";
 		String firstname = req.getParameter("firstname") != null ? req.getParameter("firstname") : "";
 		String lastname = req.getParameter("lastname") != null ? req.getParameter("lastname") : "";
-		String telephone = req.getParameter("telephone") != null ? req.getParameter("telephone") : "";
 		String stafftype = req.getParameter("stafftype") != null ? req.getParameter("stafftype") : "";
 
 		if (errors.size() > 0) {
@@ -163,7 +161,6 @@ public class CreateStaffServlet extends HttpServlet{
 		+							"Password *: <input class='createStaffInput' type=\"password\" id='password' name='password' value='" + password + "'/><br>"
 		+							"First Name *: <input class='createStaffInput' type=\"text\" id='firstname' name='firstname' value='" + firstname + "'/><br>"
 		+							"Last Name *: <input class='createStaffInput' type=\"text\" id='lastname' name='lastname' value='" + lastname + "'/><br>"
-		+							"Telephone: <input class='createStaffInput' type=\"text\" id='telephone' name='telephone' value='" + telephone + "'/><br>"
 		+							"Staff Type: <select class='staff-select createStaffInput' id='stafftype' name='stafftype' value='" + stafftype + "'>"
 				+									"<option value = '' selected> Select a Type </option>"
 		+											"<option> Instructor </option>"

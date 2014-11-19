@@ -94,14 +94,13 @@ public class DemeritDatastoreService {
 	 * 
 	 * @postcondition Staff will be an entity in datastore.
 	 */
-	public void createStaff(String email, String name, String password, String homePhone, String[] officeHours, String type)
+	public void createStaff(String email, String name, String password, String[] officeHours, String type)
 			throws EntityNotFoundException {
 
 		Entity newStaff = new Entity(STAFF, email);
 		newStaff.setProperty(TYPE, type);
 		newStaff.setProperty(NAME, name);
 		newStaff.setProperty(PASSWORD, password);
-		newStaff.setProperty(HOME_PHONE, homePhone);
 		
 		Query q = new Query(SECTION);
 		List<Entity> sectionList = ds.prepare(q).asList(
@@ -282,7 +281,7 @@ public class DemeritDatastoreService {
 	 *             Throws exception if staff is not found. i.e. email not
 	 *             existing staff
 	 */
-	public void updateStaff(String email, String name, String password, String homePhone, String[] officeHours, String type)
+	public void updateStaff(String email, String name, String password, String[] officeHours, String type)
 			throws EntityNotFoundException {
 
 		Transaction txn = ds.beginTransaction();
@@ -293,7 +292,6 @@ public class DemeritDatastoreService {
 			employee.setProperty(NAME, name);
 			employee.setProperty(TYPE, type);
 			employee.setProperty(PASSWORD, password);
-			employee.setProperty(HOME_PHONE, homePhone);
 
 			String newOfficeHours = "";
 			if (officeHours != null && officeHours[0] != "")
