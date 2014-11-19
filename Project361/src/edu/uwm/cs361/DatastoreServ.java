@@ -21,6 +21,13 @@ public class DatastoreServ {
 		// TODO
 	}
 	
+	// i don't know what the equivalent to higher order
+	// functions in java would be. in CL i'd just write 
+	// a with-persistence-manager macro, but that won't
+	// do here because no homoiconicity... but i could
+	// get a higher order function to work for the same
+	// purpose if i had any
+	
 	public void createCourse(Course c){
 		PersistenceManager pm = PMF.get().getPersistenceManager();
 		try{
@@ -29,7 +36,6 @@ public class DatastoreServ {
 		}finally{
 			pm.close();
 		}
-		// TODO
 	}
 	public void createCourse(ArrayList<Course> cs){
 		PersistenceManager pm = PMF.get().getPersistenceManager();
@@ -57,5 +63,18 @@ public class DatastoreServ {
 		}finally{
 			pm.close();
 		}
+	}
+	
+	public Course getCourse(String key){
+		PersistenceManager pm = PMF.get().getPersistenceManager(); // this line smells
+		Course c = pm.getObjectById(Course.class, key);
+		pm.close();	// i don't trust java to close pm when the function is done
+		return c;  // so that's another two lines
+	}
+	public Section getSection(String key){
+		PersistenceManager pm = PMF.get().getPersistenceManager();
+		Section s = pm.getObjectById(Section.class, key);
+		pm.close();
+		return s;
 	}
 }

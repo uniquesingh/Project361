@@ -160,18 +160,22 @@ public class Scrape {
 		// regex a best
 	}
 	
+//	private static void commitCourses(ArrayList<Course> courses){
+//		DemeritDatastoreService ds = new DemeritDatastoreService();
+//		for(Course c : courses){
+//			if( ! ds.hasDuplicate(ds.COURSE, c.getNumber()) ){
+//				// most of these are attributes of the section, not course
+//				try {
+////					Query q = new Query(ds.STAFF).setFilter(new Filter(ds.NAME,c.sections.get(0).getInstructor()));
+//					ds.createCourse(c);
+//				} catch (EntityNotFoundException e) {
+//					e.printStackTrace(); // throw it onto the user's lap
+//				}
+//			}
+//		}
+//	}
 	private static void commitCourses(ArrayList<Course> courses){
-		DemeritDatastoreService ds = new DemeritDatastoreService();
-		for(Course c : courses){
-			if( ! ds.hasDuplicate(ds.COURSE, c.getNumber()) ){
-				// most of these are attributes of the section, not course
-				try {
-//					Query q = new Query(ds.STAFF).setFilter(new Filter(ds.NAME,c.sections.get(0).getInstructor()));
-					ds.createCourse(c);
-				} catch (EntityNotFoundException e) {
-					e.printStackTrace(); // throw it onto the user's lap
-				}
-			}
-		}
+		DatastoreServ ds = new DatastoreServ();
+		ds.createCourse(courses);
 	}
 }

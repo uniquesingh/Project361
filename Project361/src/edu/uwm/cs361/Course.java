@@ -16,15 +16,19 @@ public class Course {
 	private String title;
 	@Persistent
 	private ArrayList<Section> sections;
-	
 	@PrimaryKey
-	@Persistent(valueStrategy = IdGeneratorStrategy.IDENTITY)
-	private Key key;
+	@Persistent
+	private String keyfield;
+	
+//	@PrimaryKey
+//	@Persistent(valueStrategy = IdGeneratorStrategy.IDENTITY)
+//	private Key key;
 	
 	public Course(String des, String titl, ArrayList<Section> secs){
 		designation = des;
 		title = titl;
 		sections = secs;
+		keyfield = des;
 	}
 
 	public Course(Entity e) {
@@ -32,9 +36,13 @@ public class Course {
 		String myKey = ds.getOurKey(e.getKey());
 		designation = "COMPSCI-" +myKey; 
 		title = e.getProperty(ds.COURSE_TITLE).toString();
+		keyfield = designation;
 		
 	}
 	
+	public String key(){
+		return keyfield;
+	}
 	public String getDesignation() {
 		return designation;
 	}
