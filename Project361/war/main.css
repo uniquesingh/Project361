@@ -366,6 +366,14 @@ input
 	color:#FFC478;;
 	position:relative;
 }
+.view-staff-secondCol
+{
+	top:5px;
+	font: 1.0em/30px Verdana, Arial, Helvetica, sans-serif;
+	color:#FFC478;;
+	position:relative;
+	left:-200px;
+}
 
 .view-staff-result
 {

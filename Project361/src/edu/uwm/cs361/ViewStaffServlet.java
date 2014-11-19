@@ -115,7 +115,7 @@ public class ViewStaffServlet extends HttpServlet{
 				+				user.getProperty(data.PASSWORD) + "<br>"
 				+				user.getProperty(data.TYPE) + "<br>"
 				+			"</td>"
-				+			"<td class='view-staff'>"
+				+			"<td class='view-staff-secondCol'>"
 				+				"Office:<br>"
 				+				"Office Phone:<br>"
 				+				"Address:<br>"
