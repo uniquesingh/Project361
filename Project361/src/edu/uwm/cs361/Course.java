@@ -24,6 +24,8 @@ public class Course {
 //	@Persistent(valueStrategy = IdGeneratorStrategy.IDENTITY)
 //	private Key key;
 	
+	
+	
 	public Course(String des, String titl, ArrayList<Section> secs){
 		designation = des;
 		title = titl;
