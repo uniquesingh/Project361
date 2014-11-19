@@ -1,17 +1,39 @@
 package edu.uwm.cs361;
 
+import javax.jdo.annotations.IdGeneratorStrategy;
+import javax.jdo.annotations.PersistenceCapable;
+import javax.jdo.annotations.Persistent;
+import javax.jdo.annotations.PrimaryKey;
+
 import com.google.appengine.api.datastore.Entity;
+import com.google.appengine.api.datastore.Key;
 
-
+@PersistenceCapable
 public class Section {
-	Course course;
-	String units;
-	String designation;
-	String hours;
-	String days;
-	String dates;
-	String instructor;
-	String room;
+	// applying the same annotation to multiple values seems to only now have been 
+	// supported in java 1.8, which is not what we're using
+	// lol seriously. 
+	
+	@Persistent
+	private Course course;
+	@Persistent
+	private String units;
+	@Persistent
+	private String designation;
+	@Persistent
+	private String hours;
+	@Persistent
+	private String days;
+	@Persistent
+	private String dates;
+	@Persistent
+	private String instructor;
+	@Persistent
+	private String room;
+	
+	@PrimaryKey
+	@Persistent(valueStrategy = IdGeneratorStrategy.IDENTITY)
+	private Key key;
 	
 	public Section(Course c, String un, String des, 
 			String hr, String dy, String dts, String ins, String rm){

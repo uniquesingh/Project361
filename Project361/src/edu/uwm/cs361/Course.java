@@ -2,12 +2,24 @@ package edu.uwm.cs361;
 
 import java.util.ArrayList;
 
+import javax.jdo.annotations.IdGeneratorStrategy;
+import javax.jdo.annotations.Persistent;
+import javax.jdo.annotations.PrimaryKey;
+
 import com.google.appengine.api.datastore.Entity;
+import com.google.appengine.api.datastore.Key;
 
 public class Course {
-	String designation;
-	String title;
-	ArrayList<Section> sections;
+	@Persistent
+	private String designation;
+	@Persistent
+	private String title;
+	@Persistent
+	private ArrayList<Section> sections;
+	
+	@PrimaryKey
+	@Persistent(valueStrategy = IdGeneratorStrategy.IDENTITY)
+	private Key key;
 	
 	public Course(String des, String titl, ArrayList<Section> secs){
 		designation = des;
